@@ -1,0 +1,310 @@
+================================================================================
+  LINKED LIST MANAGEMENT SYSTEM - COMPREHENSIVE TEST SUITE
+================================================================================
+
+--------------------------------------------------------------------------------
+  1. SECTION 8 EXACT EXAMPLE OUTPUT VERIFICATION
+--------------------------------------------------------------------------------
+--- Singly Linked List Example Output ---
+[SUCCESS] List was empty. Node with value 40 inserted as head.
+[SUCCESS] Node with value 10 inserted at the end.
+[SUCCESS] Node with value 30 inserted at the end.
+[SUCCESS] Node with value 20 inserted at the end.
+[SUCCESS] Node with value 50 inserted at the end.
+Before:
+40 -> 10 -> 30 -> 20 -> 50 -> NULL
+
+After Sort:
+Before Sort:
+  40 -> 10 -> 30 -> 20 -> 50 -> NULL
+After Sort:
+  10 -> 20 -> 30 -> 40 -> 50 -> NULL
+
+After Reverse:
+Before Reverse:
+  10 -> 20 -> 30 -> 40 -> 50 -> NULL
+After Reverse:
+  50 -> 40 -> 30 -> 20 -> 10 -> NULL
+
+--- Doubly Linked List Example Output ---
+[SUCCESS] List was empty. Node with value 10 inserted as head and tail.
+[SUCCESS] Node with value 20 attached after tail at the end.
+[SUCCESS] Node with value 30 attached after tail at the end.
+[SUCCESS] Node with value 40 attached after tail at the end.
+Forward:
+NULL <- 10 <-> 20 <-> 30 <-> 40 -> NULL
+Backward:
+NULL <- 40 <-> 30 <-> 20 <-> 10 -> NULL
+
+--------------------------------------------------------------------------------
+  2. FULL SINGLY LINKED LIST OPERATIONS SUITE (1 - 19)
+--------------------------------------------------------------------------------
+[Op 1 & 2] Insert at Beginning and End:
+[SUCCESS] Node with value 20 inserted at the beginning.
+[SUCCESS] Node with value 10 inserted at the beginning.
+[SUCCESS] Node with value 40 inserted at the end.
+[SUCCESS] Node with value 50 inserted at the end.
+10 -> 20 -> 40 -> 50 -> NULL
+
+[Op 3] Insert at Position (position 3, val 30):
+[SUCCESS] Node with value 30 inserted at position 3.
+10 -> 20 -> 30 -> 40 -> 50 -> NULL
+
+[Op 4] Insert After a Node (after 30, val 35):
+[SUCCESS] Node with value 35 inserted after node with value 30.
+10 -> 20 -> 30 -> 35 -> 40 -> 50 -> NULL
+
+[Op 5] Insert Before a Node (before 35, val 32):
+[SUCCESS] Node with value 32 inserted before node with value 35.
+10 -> 20 -> 30 -> 32 -> 35 -> 40 -> 50 -> NULL
+
+[Op 6] Delete from Beginning:
+[SUCCESS] Deleted node with value 10 from the beginning.
+20 -> 30 -> 32 -> 35 -> 40 -> 50 -> NULL
+
+[Op 7] Delete from End:
+[SUCCESS] Deleted node with value 50 from the end.
+20 -> 30 -> 32 -> 35 -> 40 -> NULL
+
+[Op 8] Delete from Position (position 3):
+[SUCCESS] Deleted node with value 32 from position 3.
+20 -> 30 -> 35 -> 40 -> NULL
+
+[Op 9] Delete by Value (val 35):
+[SUCCESS] Deleted first occurrence of value 35.
+20 -> 30 -> 40 -> NULL
+
+[Op 10] Search for values:
+[FOUND] Value 40 found at position 3 (1-based index).
+[NOT FOUND] Value 999 does not exist in the list.
+
+[Op 11] Update value (40 -> 45):
+[SUCCESS] Updated value 40 to 45 at position 3.
+20 -> 30 -> 45 -> NULL
+
+[Op 12] Display List:
+20 -> 30 -> 45 -> NULL
+
+[Op 13] Count Nodes:
+Node count: 3
+
+[Op 14 & 15] Maximum and Minimum values:
+[RESULT] Maximum value in the list: 45
+[RESULT] Minimum value in the list: 20
+
+[Op 16] Find Middle Element:
+[RESULT] List length is ODD (3 nodes).
+  -> Exact Middle Element at position 2: 30
+
+[Op 17] Reverse List:
+Before Reverse:
+  20 -> 30 -> 45 -> NULL
+After Reverse:
+  45 -> 30 -> 20 -> NULL
+
+[Op 18] Sort List:
+Before Sort:
+  45 -> 30 -> 20 -> NULL
+After Sort:
+  20 -> 30 -> 45 -> NULL
+
+[Op 19] Remove Duplicates:
+[SUCCESS] Node with value 20 inserted at the end.
+[SUCCESS] Node with value 45 inserted at the end.
+[SUCCESS] Node with value 20 inserted at the end.
+List before duplicate removal:
+20 -> 30 -> 45 -> 20 -> 45 -> 20 -> NULL
+Before Removing Duplicates:
+  20 -> 30 -> 45 -> 20 -> 45 -> 20 -> NULL
+[SUCCESS] Removed 3 duplicate element(s).
+After Removing Duplicates:
+  20 -> 30 -> 45 -> NULL
+
+--------------------------------------------------------------------------------
+  3. FULL DOUBLY LINKED LIST OPERATIONS SUITE (1 - 20)
+--------------------------------------------------------------------------------
+[Op 1 & 2] Insert at Beginning and End:
+[SUCCESS] List was empty. Node with value 200 inserted as head and tail.
+[SUCCESS] Node with value 100 inserted at the beginning.
+[SUCCESS] Node with value 400 attached after tail at the end.
+[SUCCESS] Node with value 500 attached after tail at the end.
+Forward:  NULL <- 100 <-> 200 <-> 400 <-> 500 -> NULL
+Backward: NULL <- 500 <-> 400 <-> 200 <-> 100 -> NULL
+
+[Op 3] Insert at Position (position 3, val 300):
+[SUCCESS] Node with value 300 inserted at position 3.
+Forward:  NULL <- 100 <-> 200 <-> 300 <-> 400 <-> 500 -> NULL
+
+[Op 4] Insert After a Node (after 300, val 350):
+[SUCCESS] Node with value 350 inserted after node with value 300.
+Forward:  NULL <- 100 <-> 200 <-> 300 <-> 350 <-> 400 <-> 500 -> NULL
+
+[Op 5] Insert Before a Node (before 350, val 320):
+[SUCCESS] Node with value 320 inserted before node with value 350.
+Forward:  NULL <- 100 <-> 200 <-> 300 <-> 320 <-> 350 <-> 400 <-> 500 -> NULL
+
+[Op 6] Delete from Beginning:
+[SUCCESS] Deleted head node with value 100 and updated new head's prev to NULL.
+Forward:  NULL <- 200 <-> 300 <-> 320 <-> 350 <-> 400 <-> 500 -> NULL
+
+[Op 7] Delete from End:
+[SUCCESS] Deleted tail node with value 500 and updated new tail's next to NULL.
+Forward:  NULL <- 200 <-> 300 <-> 320 <-> 350 <-> 400 -> NULL
+
+[Op 8] Delete from Position (position 3):
+[SUCCESS] Deleted node with value 320 from position 3 while preserving both links.
+Forward:  NULL <- 200 <-> 300 <-> 350 <-> 400 -> NULL
+
+[Op 9] Delete by Value (val 350):
+[SUCCESS] Deleted first matching node with value 350.
+Forward:  NULL <- 200 <-> 300 <-> 400 -> NULL
+
+[Op 10] Search for values:
+[FOUND] Value 400 found at position 3 (1-based index).
+[NOT FOUND] Value 9999 does not exist in the list.
+
+[Op 11] Update value (400 -> 450):
+[SUCCESS] Replaced data of matching node from 400 to 450 at position 3.
+Forward:  NULL <- 200 <-> 300 <-> 450 -> NULL
+
+[Op 12 & 13] Display Forward and Backward:
+Forward:  NULL <- 200 <-> 300 <-> 450 -> NULL
+Backward: NULL <- 450 <-> 300 <-> 200 -> NULL
+
+[Op 14] Count Nodes:
+Node count: 3
+
+[Op 15 & 16] Maximum and Minimum values:
+[RESULT] Maximum value in the list: 450
+[RESULT] Minimum value in the list: 200
+
+[Op 17] Find Middle Element:
+[RESULT] List length is ODD (3 nodes).
+  -> Exact Middle Element at position 2: 300
+
+[Op 18] Reverse Doubly Linked List:
+Before Reverse:
+  Forward:  NULL <- 200 <-> 300 <-> 450 -> NULL
+  Backward: NULL <- 450 <-> 300 <-> 200 -> NULL
+After Reverse:
+  Forward:  NULL <- 450 <-> 300 <-> 200 -> NULL
+  Backward: NULL <- 200 <-> 300 <-> 450 -> NULL
+
+[Op 19] Sort Doubly Linked List:
+Before Sort:
+  NULL <- 450 <-> 300 <-> 200 -> NULL
+After Sort:
+  NULL <- 200 <-> 300 <-> 450 -> NULL
+
+[Op 20] Remove Duplicates from Doubly Linked List:
+[SUCCESS] Node with value 200 attached after tail at the end.
+[SUCCESS] Node with value 450 attached after tail at the end.
+[SUCCESS] Node with value 200 attached after tail at the end.
+List before duplicate removal:
+Forward:  NULL <- 200 <-> 300 <-> 450 <-> 200 <-> 450 <-> 200 -> NULL
+Before Removing Duplicates:
+  NULL <- 200 <-> 300 <-> 450 <-> 200 <-> 450 <-> 200 -> NULL
+[SUCCESS] Removed 3 duplicate element(s) while maintaining valid prev/next links.
+After Removing Duplicates:
+  Forward:  NULL <- 200 <-> 300 <-> 450 -> NULL
+  Backward: NULL <- 450 <-> 300 <-> 200 -> NULL
+
+--------------------------------------------------------------------------------
+  4. SECTION 10 EDGE CASES VERIFICATION
+--------------------------------------------------------------------------------
+>> Edge Case 1: Operations on Empty List:
+Display empty SLL: Empty List: NULL
+[ERROR] List is empty! Cannot delete from beginning.
+[ERROR] List is empty! Cannot delete from end.
+[ERROR] List is empty! Cannot delete from position.
+[ERROR] List is empty! Cannot delete by value.
+[INFO] List is empty. Value 10 not found.
+[ERROR] List is empty! Cannot update value.
+[ERROR] List is empty! Maximum value cannot be determined.
+[ERROR] List is empty! Minimum value cannot be determined.
+[ERROR] List is empty! No middle element exists.
+[WARNING] List is empty! Nothing to reverse.
+[INFO] List is empty or has only 1 element. Already sorted.
+[INFO] List has 0 or 1 element. No duplicates possible.
+
+>> Edge Case 2: Operations on Single-Node List:
+[SUCCESS] Node with value 42 inserted at the beginning.
+Single-node list: 42 -> NULL
+Count: 1
+[RESULT] Maximum value in the list: 42
+[RESULT] Minimum value in the list: 42
+[RESULT] List length is ODD (1 nodes).
+  -> Exact Middle Element at position 1: 42
+[INFO] Single node list. Reverse is identical.
+[INFO] List is empty or has only 1 element. Already sorted.
+[INFO] List has 0 or 1 element. No duplicates possible.
+[SUCCESS] Deleted single existing node with value 42.
+After deletion of only node: Empty List: NULL
+
+>> Edge Case 3: Insert / Delete at Position 1:
+[SUCCESS] List was empty. Node with value 99 inserted as head and tail.
+[SUCCESS] Node with value 88 inserted at the beginning.
+[SUCCESS] Node with value 77 inserted at the beginning.
+List after insertions at position 1: NULL <- 77 <-> 88 <-> 99 -> NULL
+[SUCCESS] Deleted head node with value 77 and updated new head's prev to NULL.
+List after deletion at position 1:   NULL <- 88 <-> 99 -> NULL
+
+>> Edge Case 4: Insert at Last Valid Position:
+Current count: 2
+[SUCCESS] Node with value 1000 attached after tail at the end.
+After inserting at position (count + 1): NULL <- 88 <-> 99 <-> 1000 -> NULL
+
+>> Edge Case 5: Invalid or Out-of-Range Positions:
+[ERROR] Invalid position 0! Valid range is 1 to 4.
+[ERROR] Invalid position 100! Valid range is 1 to 4.
+[ERROR] Invalid position 0! Valid range is 1 to 3.
+[ERROR] Invalid position 50! Valid range is 1 to 3.
+
+>> Edge Case 6: Delete Non-Existent Value:
+[ERROR] Value 123456 not found in the list.
+
+>> Edge Case 7: List with Multiple Duplicates:
+[SUCCESS] List was empty. Node with value 5 inserted as head.
+[SUCCESS] Node with value 5 inserted at the end.
+[SUCCESS] Node with value 10 inserted at the end.
+[SUCCESS] Node with value 5 inserted at the end.
+[SUCCESS] Node with value 20 inserted at the end.
+[SUCCESS] Node with value 10 inserted at the end.
+[SUCCESS] Node with value 5 inserted at the end.
+Before duplicate removal: 5 -> 5 -> 10 -> 5 -> 20 -> 10 -> 5 -> NULL
+Before Removing Duplicates:
+  5 -> 5 -> 10 -> 5 -> 20 -> 10 -> 5 -> NULL
+[SUCCESS] Removed 4 duplicate element(s).
+After Removing Duplicates:
+  5 -> 10 -> 20 -> NULL
+After duplicate removal:  5 -> 10 -> 20 -> NULL
+
+>> Edge Case 8: Zero and Negative Values:
+[SUCCESS] List was empty. Node with value -15 inserted as head and tail.
+[SUCCESS] Node with value 0 attached after tail at the end.
+[SUCCESS] Node with value -50 attached after tail at the end.
+[SUCCESS] Node with value 25 attached after tail at the end.
+[SUCCESS] Node with value -5 attached after tail at the end.
+Forward before sort:  NULL <- -15 <-> 0 <-> -50 <-> 25 <-> -5 -> NULL
+Backward before sort: NULL <- -5 <-> 25 <-> -50 <-> 0 <-> -15 -> NULL
+[RESULT] Maximum value in the list: 25
+[RESULT] Minimum value in the list: -50
+Before Sort:
+  NULL <- -15 <-> 0 <-> -50 <-> 25 <-> -5 -> NULL
+After Sort:
+  NULL <- -50 <-> -15 <-> -5 <-> 0 <-> 25 -> NULL
+Forward after sort:   NULL <- -50 <-> -15 <-> -5 <-> 0 <-> 25 -> NULL
+Backward after sort:  NULL <- 25 <-> 0 <-> -5 <-> -15 <-> -50 -> NULL
+
+>> Edge Case 9: Sort Empty or Single-Node List:
+[INFO] List is empty or has only 1 element. Already sorted.
+[SUCCESS] List was empty. Node with value 7 inserted as head and tail.
+[INFO] List is empty or has only 1 element. Already sorted.
+
+>> Edge Case 10: Reverse Empty or Single-Node List:
+[WARNING] List is empty! Nothing to reverse.
+[SUCCESS] List was empty. Node with value 13 inserted as head and tail.
+[INFO] Single node list. Reverse is identical.
+================================================================================
+  ALL TESTS COMPLETED SUCCESSFULLY
+================================================================================

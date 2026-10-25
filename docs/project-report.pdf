@@ -1,0 +1,104 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> /F2 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >> >>
+endobj
+4 0 obj
+<< /Length 3228 >>
+stream
+BT /F1 20 Tf 50 780 Td (Linked List Management System) Tj ET
+BT /F2 11 Tf 50 760 Td (DSA Mini Project - 2nd Year College Level) Tj ET
+BT /F2 10 Tf 50 745 Td (Language: Java | Target: Custom Dynamic Node Chaining) Tj ET
+0.2 0.4 0.8 rg 50 735 512 2 re f 0 g
+BT /F1 13 Tf 50 710 Td (1. Executive Summary & Project Overview) Tj ET
+BT /F2 10 Tf 50 690 Td (The Linked List Management System is an interactive, menu-driven console) Tj ET
+BT /F2 10 Tf 50 676 Td (application for practicing dynamic linear data structures. Implemented from scratch) Tj ET
+BT /F2 10 Tf 50 662 Td (in Java, it contains a full-featured Singly Linked List (19 operations) and) Tj ET
+BT /F2 10 Tf 50 648 Td (Doubly Linked List (20 operations), adhering to all academic specifications.) Tj ET
+BT /F1 13 Tf 50 620 Td (2. Language Choice Justification: Java) Tj ET
+BT /F2 10 Tf 50 600 Td (- Object Reference Model: Uses explicit object chaining (node.next, node.prev)) Tj ET
+BT /F2 10 Tf 50 586 Td (  avoiding raw pointer arithmetic pitfalls while retaining dynamic memory modeling.) Tj ET
+BT /F2 10 Tf 50 572 Td (- Automatic Garbage Collection: Safely reclaims memory for unlinked nodes) Tj ET
+BT /F2 10 Tf 50 558 Td (  via JVM GC root reachability, preventing memory leaks and dangling references.) Tj ET
+BT /F2 10 Tf 50 544 Td (- Strong Typing & Robust I/O: Encapsulates static Node classes with Scanner validation.) Tj ET
+BT /F1 13 Tf 50 515 Td (3. System Architecture & Components) Tj ET
+BT /F2 10 Tf 50 495 Td (The system is structured into modular components:) Tj ET
+BT /F2 10 Tf 50 481 Td (1. SinglyLinkedList.java: Unidirectional list handling 19 core operations.) Tj ET
+BT /F2 10 Tf 50 467 Td (2. DoublyLinkedList.java: Bidirectional list maintaining head and tail references.) Tj ET
+BT /F2 10 Tf 50 453 Td (3. Main.java: Interactive console menu with full input validation & comparison UI.) Tj ET
+BT /F2 10 Tf 50 439 Td (4. TestRunner.java: Automated regression harness validating all operations & edge cases.) Tj ET
+BT /F1 13 Tf 50 410 Td (4. Operations Summary: Singly Linked List) Tj ET
+BT /F2 9 Tf 50 392 Td (1. Insert Beginning  O(1)   | 8. Delete Position   O(n)   | 15. Find Minimum     O(n)) Tj ET
+BT /F2 9 Tf 50 378 Td (2. Insert End        O(n)   | 9. Delete Value      O(n)   | 16. Middle Element   O(n)) Tj ET
+BT /F2 9 Tf 50 364 Td (3. Insert Position   O(n)   | 10. Search Value     O(n)   | 17. Reverse List     O(n)) Tj ET
+BT /F2 9 Tf 50 350 Td (4. Insert After Node O(n)   | 11. Update Value     O(n)   | 18. Bubble Sort      O(n^2)) Tj ET
+BT /F2 9 Tf 50 336 Td (5. Insert Before NodeO(n)   | 12. Display List     O(n)   | 19. Remove Dups      O(n^2)) Tj ET
+BT /F2 9 Tf 50 322 Td (6. Delete Beginning  O(1)   | 13. Count Nodes      O(n)   | 20. Exit) Tj ET
+BT /F2 9 Tf 50 308 Td (7. Delete End        O(n)   | 14. Find Maximum     O(n)) Tj ET
+BT /F1 13 Tf 50 280 Td (5. Operations Summary: Doubly Linked List) Tj ET
+BT /F2 9 Tf 50 262 Td (Supports all operations above with O(1) End Insertion and End Deletion using tail,) Tj ET
+BT /F2 9 Tf 50 248 Td (plus Op 12: Display Forward and Op 13: Display Backward (NULL <- 40 <-> 30 -> NULL).) Tj ET
+BT /F2 8 Tf 50 50 Td (Page 1 of 2 | DSA Mini Project - Linked List Management System) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> /F2 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >> >>
+endobj
+6 0 obj
+<< /Length 3320 >>
+stream
+BT /F1 16 Tf 50 780 Td (Comparative Analysis & Technical Evaluation) Tj ET
+0.2 0.4 0.8 rg 50 770 512 2 re f 0 g
+BT /F1 12 Tf 50 745 Td (6. Singly vs Doubly Linked List Comparison) Tj ET
+BT /F2 9 Tf 50 725 Td (Feature / Dimension       | Singly Linked List (SLL)      | Doubly Linked List (DLL)) Tj ET
+0.7 0.7 0.7 rg 50 720 512 1 re f 0 g
+BT /F2 9 Tf 50 705 Td (Node Structure            | data, next                    | prev, data, next) Tj ET
+BT /F2 9 Tf 50 691 Td (Pointer Overhead          | 1 reference per node          | 2 references per node) Tj ET
+BT /F2 9 Tf 50 677 Td (Traversal Direction       | Forward only (Unidirectional) | Forward and Backward) Tj ET
+BT /F2 9 Tf 50 663 Td (Insert at End             | O(n) without tail             | O(1) with tail reference) Tj ET
+BT /F2 9 Tf 50 649 Td (Delete from End           | O(n) (requires predecessor)   | O(1) with tail reference) Tj ET
+BT /F2 9 Tf 50 635 Td (Delete given node ref     | O(n)                          | O(1) (node.prev.next = node.next)) Tj ET
+BT /F2 9 Tf 50 621 Td (Reverse Complexity        | O(n) time, O(1) space         | O(n) time, O(1) space) Tj ET
+BT /F2 9 Tf 50 607 Td (Typical Applications      | Stacks, Queues, Hash Chaining | Browser History, Undo/Redo, LRU) Tj ET
+BT /F1 12 Tf 50 580 Td (7. Key Algorithm Highlights) Tj ET
+BT /F2 10 Tf 50 562 Td (- Middle Element: Floyd's slow/fast pointers. For even-length lists (2k nodes),) Tj ET
+BT /F2 10 Tf 50 548 Td (  rule selects the upper/second middle (pos k+1) while reporting both central nodes.) Tj ET
+BT /F2 10 Tf 50 534 Td (- In-Place Reversal: Re-links next in SLL; swaps prev and next in DLL in O(1) space.) Tj ET
+BT /F2 10 Tf 50 520 Td (- Bubble Sort: In-place data swapping with early-termination swapped flag optimization.) Tj ET
+BT /F2 10 Tf 50 506 Td (- Duplicate Removal: Runner pointer O(n^2) time, O(1) space, preserves valid links.) Tj ET
+BT /F1 12 Tf 50 478 Td (8. Edge Cases Tested (Section 10 Brief)) Tj ET
+BT /F2 10 Tf 50 460 Td (1. Empty list operations (delete, search, update, min/max, middle, reverse, sort).) Tj ET
+BT /F2 10 Tf 50 446 Td (2. Single-node list state consistency (head == tail, reversal/sort identity).) Tj ET
+BT /F2 10 Tf 50 432 Td (3. Insert/delete at position 1 (head updates).) Tj ET
+BT /F2 10 Tf 50 418 Td (4. Insert at last valid position (count + 1) updating tail.) Tj ET
+BT /F2 10 Tf 50 404 Td (5. Invalid positions (0, out of bounds) intercepted with error diagnostics.) Tj ET
+BT /F2 10 Tf 50 390 Td (6. Non-existent value deletion & search reporting not found.) Tj ET
+BT /F2 10 Tf 50 376 Td (7. Multiple and consecutive duplicates completely sanitized.) Tj ET
+BT /F2 10 Tf 50 362 Td (8. Negative numbers and zero correctly evaluated in min, max, and sorting.) Tj ET
+BT /F2 10 Tf 50 348 Td (9. Sorting empty or 1-node lists safely returns without error.) Tj ET
+BT /F2 10 Tf 50 334 Td (10. Reversing empty or 1-node lists safely returns without error.) Tj ET
+BT /F1 12 Tf 50 306 Td (9. Test Verification & Conclusion) Tj ET
+BT /F2 10 Tf 50 288 Td (All test suites run via 'make test' or './test.sh'. Full output logged in) Tj ET
+BT /F2 10 Tf 50 274 Td (sample-output/output.txt. The project achieves 100% adherence to all project briefs.) Tj ET
+BT /F2 8 Tf 50 50 Td (Page 2 of 2 | DSA Mini Project - Linked List Management System) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000360 00000 n 
+0000003640 00000 n 
+0000003879 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+7251
+%%EOF
